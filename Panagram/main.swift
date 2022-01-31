@@ -1,11 +1,9 @@
-//
-//  main.swift
-//  Panagram
-//
-//  Created by Daniel on 31/Jan/22.
-//
-
 import Foundation
 
-print("Hello, World!")
+let panagram = Panagram()
 
+if CommandLine.argc < 2 {
+    panagram.interactiveMode()
+} else {
+    panagram.staticMode()
+}
